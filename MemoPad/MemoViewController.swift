@@ -28,8 +28,8 @@ class MemoViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func saveMemo(_ sender: Any) {
-        saveDeta.set(titleTextField, forKey: "title")
-        saveDeta.set(contentTextView, forKey: "content")
+        saveDeta.set(titleTextField.text, forKey: "title")
+        saveDeta.set(contentTextView.text, forKey: "content")
         
         let alert: UIAlertController = UIAlertController(title: "保存", message: "メモの保存が完了しました。", preferredStyle: .alert )
         
