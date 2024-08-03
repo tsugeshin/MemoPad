@@ -37,7 +37,7 @@ class MemoCollectionViewController: UIViewController, UICollectionViewDataSource
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        collectionView.dataSource = self
     }
     
 }
