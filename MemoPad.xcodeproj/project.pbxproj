@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EAA469E32C5E157D008485E7 /* MemoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA469E22C5E157D008485E7 /* MemoCollectionViewController.swift */; };
 		EADC63732C4A646D00075A14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADC63722C4A646D00075A14 /* AppDelegate.swift */; };
 		EADC63752C4A646D00075A14 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADC63742C4A646D00075A14 /* SceneDelegate.swift */; };
 		EADC63772C4A646D00075A14 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADC63762C4A646D00075A14 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EAA469E22C5E157D008485E7 /* MemoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoCollectionViewController.swift; sourceTree = "<group>"; };
 		EADC636F2C4A646D00075A14 /* MemoPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EADC63722C4A646D00075A14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EADC63742C4A646D00075A14 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				EADC637B2C4A646E00075A14 /* Assets.xcassets */,
 				EADC637D2C4A646E00075A14 /* LaunchScreen.storyboard */,
 				EADC63802C4A646E00075A14 /* Info.plist */,
+				EAA469E22C5E157D008485E7 /* MemoCollectionViewController.swift */,
 			);
 			path = MemoPad;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 				EADC63872C4A661900075A14 /* MemoViewController.swift in Sources */,
 				EADC63772C4A646D00075A14 /* ViewController.swift in Sources */,
 				EADC63732C4A646D00075A14 /* AppDelegate.swift in Sources */,
+				EAA469E32C5E157D008485E7 /* MemoCollectionViewController.swift in Sources */,
 				EADC63752C4A646D00075A14 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

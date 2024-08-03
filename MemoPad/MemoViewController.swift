@@ -17,7 +17,7 @@ class MemoViewController: UIViewController, UITextFieldDelegate {
     var titles: [String] = []
     
     var contents: [String] = []
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -29,40 +29,40 @@ class MemoViewController: UIViewController, UITextFieldDelegate {
         print(contents)
         
         titleTextField.delegate = self
+        }
+        
+        @IBAction func saveMemo() {
+            
+            let title = titleTextField.text!
+            let content = contentTextView.text!
+            
+            titles.append(title)
+            contents.append(content)
+            
+            saveData.set(titles, forKey: "titles")
+            saveData.set(contents, forKey: "contents")
+            
+            let alert: UIAlertController = UIAlertController(title: "保存", message: "メモの保存が完了しました。", preferredStyle: .alert )
+            
+            alert.addAction(
+                UIAlertAction(title: "OK",
+                              style: .default,
+                              handler: { action in
+                                  self.navigationController?.popViewController(animated: true)
+                                  
+                                  print("OKが押されました。")
+                              })
+            )
+            present(alert,animated: true,completion: nil)
+        }
+        /*
+         // MARK: - Navigation
+         
+         // In a storyboard-based application, you will often want to do a little preparation before navigation
+         override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+         // Get the new view controller using segue.destination.
+         // Pass the selected object to the new view controller.
+         }
+         */
+        
     }
-    
-    @IBAction func saveMemo() {
-        
-        let title = titleTextField.text!
-        let content = contentTextView.text!
-        
-        titles.append(title)
-        contents.append(content)
-        
-        saveData.set(titleTextField.text, forKey: "title")
-        saveData.set(contentTextView.text, forKey: "content")
-        
-        let alert: UIAlertController = UIAlertController(title: "保存", message: "メモの保存が完了しました。", preferredStyle: .alert )
-        
-        alert.addAction(
-            UIAlertAction(title: "OK",
-                          style: .default,
-                          handler: { action in
-                              self.navigationController?.popViewController(animated: true)
-                              
-                              print("OKが押されました。")
-                          })
-        )
-        present(alert,animated: true,completion: nil)
-    }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-}
