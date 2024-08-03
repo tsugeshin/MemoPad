@@ -13,7 +13,7 @@ class MemoCollectionViewController: UIViewController, UICollectionViewDataSource
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-       let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
+       let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
         
        var contentConfiguration = UIListContentConfiguration.cell()
         
